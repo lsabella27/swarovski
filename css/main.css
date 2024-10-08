@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+:root {
+    --main: #282A61;
+    --mainFont: 'pretendard', sans-serif;
+    --subfont: "Kaisei HarunoUmi", serif;
+    --subcolor: #C8C9E0;
+}
+
+body {line-height: 1.5;color: #000;font-size: 1.6rem;
+font-family: var(--mainFont); overflow-x: auto;}
+
+.inner { max-width: 1700px; width: 100%; margin: 0 auto;}
+
+#wrap { overflow-x: auto; min-width: 1700px;}
+
+/* 애니메이션 */
+@keyframes motion1 {
+  0% { transform: translate(-100px,0); opacity: 0; }
+  20%,90% { transform: translate(0,0); opacity: 1; }
+  100% { transform: translate(0,0); opacity: 0; }
+}
+
+@keyframes rotate_img {
+    100% {transform: rotate(360deg);}
+}
+@keyframes slogan {
+    100% { -webkit-transform: translateX(-40%);}
+}
+
+
+/* header */
+#header { background: var(--main);height: 150px; position: relative;}
+
+#header .inner { display: flex; justify-content: center;align-items: center;}
+#header .inner h1 {position: absolute; bottom: 22px; left: 42.3%;}
+#header .inner .swan  {text-align: center; position: absolute; top: 30px; left: 47%;}
+
+/* gnb */
+#header nav { position: relative; }
+#header .gnb_bar { width: 0px; height: 5px; background: var(--subcolor); position: absolute; left: 0; top: 145px; }
+#header .gnb {display: flex; bottom: 10px; z-index: 1;
+  overflow: hidden; margin-top: 100px; } 
+#header .gnb > li {position: relative; z-index: 33;}
+#header .gnb > li > a {display: inline-block; color: #eee; transition: all 0.3s; font-weight: 700; margin-bottom: 24px;}
+#header .gnb > li:hover > a {color: var(--subcolor); }
+
+#header .gnb>li:nth-child(1) {width: 140px; }
+#header .gnb>li:nth-child(2) {width: 160px;}
+#header .gnb>li:nth-child(3) {width: 120px; margin-right: 340px; }
+#header .gnb>li:nth-child(4) {width: 160px; }
+#header .gnb>li:nth-child(5) {width: 130px; }
+#header .gnb>li:nth-child(6) {width: 140px; }
+
+
+/* dp2 */
+#header .gnb > li  .dp2 {width: 100%; padding: 10px 0 0 ; margin-top: 26px;}
+#header .gnb > li .dp2  li a {color:#333; display: block; padding: 5px 0; transition: all 0.3s;}
+#header .gnb > li .dp2  li a:hover {font-weight: 700; color: var(--main); display: block;}
+
+
+/* dp2_bg */
+#header .dp2_bg {background: #fff url('../images/dp2_swan.svg')no-repeat 837px 22px; width: 100%; height: 250px; z-index: 20; position: absolute; left: 0; top: 150px;}
+
+
+/* util */
+#header .util { display: flex;gap: 15px;position: absolute;right: 5%; top: 20%;}
+
+
+/* 언어 lan */
+#header .lan {border: 0; appearance: none; position: absolute; right: 163px; top: 70px; background: var(--subcolor); padding: 20px; }
+#header .lan li a {color: #999; display: block; transition: all 0.3s;}
+#header .lan li a:hover {color: var(--main); font-weight: 700;} 
+#header .lan li a.on {color: var(--main); font-weight: 700;}
+
+
+/* search */
+#header .search {background: rgb(255, 255, 255,0.9); height: 300px; position: absolute; width: 100%; left: 0; top: 150px; z-index: 11;}
+#header .search div {display: flex; justify-content: center; padding-top: 100px;}
+#header .search div input[type="search"] { border-bottom: 3px solid #282A61; width: 500px;height: 40px; font-family: var(--subfont); font-size: 2rem; padding-left: 10px; background: none; outline: none; }
+#header .search div input[type="search"]::placeholder {color: var(--main);}
+#header .search div input[type="submit"] {background: #282A61 url('../images/arrow.svg')no-repeat center; border-bottom: 3px solid #282A61; width: 40px;height: 40px; font-size: 0; cursor: pointer;}
+
+#header .search .search_close {background:  url('../images/search_close.png')no-repeat center; width: 50px; height: 50px; border: 0; font-size: 0; cursor: pointer; position: absolute; left: calc(50% - 25px); bottom: 10px;}
+
+#header .search_bottom {display: flex; gap: 15px; left: 36%; top: 150px; position: absolute; padding-top: 10px;}
+#header .search_bottom li a {display: block; color: #000;}
+#header .search_bottom span {color: var(--main); font-weight: 700; font-size: 1.5rem;}
+
+
+/* 메인 공통 */
+#main h2 {font-family: "Kaisei HarunoUmi", serif; font-size:4rem; font-weight: 500; text-align: center;}
+#main h2+p {padding: 10px 0 100px; font-size: 1.8rem; text-align: center;}
+#main h3 { font-family: "Kaisei HarunoUmi", serif;font-size: 6rem;font-weight: 500;}
+#main h3+p { font-size: 2rem;}
+
+
+
+
+/* main 시작*/
+
+
+
+
+/* main_visual */
+#main_visual {position: relative;}
+#main_visual >ul >li {position: absolute;}
+
+
+/* visual_txt1 */
+#main_visual .visual_txt1 {position: absolute; right: 20%;
+ top: 200px; color: #fff; animation: motion1 8s;}
+#main_visual .visual_txt1 p {padding: 10px 0 30px; }
+#main_visual .visual_txt1 .btn_more1 a { display: inline-block;
+ color: #fff; background: var(--main);padding: 5px 40px;
+font-size: 1.3rem; font-family: var(--subfont); transition: all 0.3s;}
+#main_visual .visual_txt1 .btn_more1 a:hover {background: var(--subcolor); color: var(--main); font-weight: 700;}
+
+/* visual_txt2 */
+#main_visual .visual_txt2 {position: absolute; left: 150px;top: 200px; }
+#main_visual .visual_txt2 p {padding: 10px 0 30px;}
+#main_visual .visual_txt2 .btn_more2 a { display: inline-block;
+ color: #000;background: #fff;padding: 5px 40px;
+ font-size: 1.3rem;font-family: var(--subfont); transition: all 0.3s;}
+ #main_visual .visual_txt2 .btn_more2 a:hover {background: #F9DCC5;  font-weight: 700;}
+
+ /* visual_txt3 */
+#main_visual .visual_txt3 {position: absolute; right: 200px; top: 200px;text-align: right; }
+#main_visual .visual_txt3 p {padding: 10px 0 30px;}
+#main_visual .visual_txt3 .btn_more3 a { display: inline-block;
+color: #fff; background: var(--main);padding: 5px 40px;
+font-size: 1.3rem;font-family: var(--subfont); transition: all 0.3s; } 
+#main_visual .visual_txt3 .btn_more3 a:hover {background: var(--subcolor); color: var(--main); font-weight: 700;}
+
+/* 슬라이드 이미지 */
+#main_visual .mv {height: 900px;}
+#main_visual .mv1 {background: url('../images/mv_01.png')no-repeat center;width: 100%; height: 900px; }
+#main_visual .mv2 {background: url('../images/mv_02.png')no-repeat center; width: 100%; height: 900px;}
+#main_visual .mv3 { background: url('../images/mv_03.png')no-repeat center; width: 100%; height: 900px;}
+
+
+/* 슬라이드기호 */
+#main_visual .swiper-pagination {color: #000;}
+#main_visual .swiper .swiper-pagination {
+    position: absolute; right: 50px;
+    top: 48% !important;
+  }
+  #main_visual  .swiper .swiper-pagination-bullet {
+    background-color: #fff;
+    margin: 8px 0 !important;
+  }
+
+
+
+/* main_visual intro */
+#main_visual .titlebox {padding-top: 80px;display: block;text-align: center;text-align: center;}
+
+#main_visual .description {text-align: center;padding-bottom: 150px;}
+
+#main_visual .description p {padding: 40px 0;font-size: 2rem;}
+
+#main_visual .description .btn_read { display: inline-block;
+ background: var(--main);border-radius: 30px; color: #fff;padding: 10px 30px;font-family: var(--subfont);font-size: 1.5rem; transition: all 0.3s;}
+ #main_visual .description .btn_read:hover {background: var(--subcolor); color: var(--main); font-weight: 700;}
+
+
+/* 돌아가는 원 애니메이션 */
+#main .cc img{animation: rotate_img 10s linear infinite;}
+#main .cc {position: absolute; left: -200px; top: 1300px; z-index: 2;}
+
+
+
+/* Collect */
+#Collect .inner {padding: 100px 0 150px;}
+#Collect .inner  dl {align-items: center; position: relative;}
+#Collect .inner  dl dt {font-weight: 700; font-size: 3rem; }
+#Collect .inner  dl dd a {background: var(--main); padding: 5px 40px; font-family: var(--subfont); font-weight: 1.2rem; display: inline-block; border-radius: 30px; color: #fff; margin-top: 150px; transition: all 0.3s;}
+#Collect .inner  dl dd a:hover {background: var(--subcolor); font-weight: 700; color: var(--main);} 
+
+/* top */
+#Collect .inner  .top dl {padding: 70px 0 0 30px;}
+#Collect .inner  .top dl dt::before {content: ""; display: block; position: absolute; width: 1px; height: 100px; background: var(--subcolor); left: 30px; top: 180px;}
+#Collect .inner .top {display: flex; gap: 100px;}
+#Collect .inner .top img {width: 700px; height: 500px; margin-left: 150px;}
+
+/* bottom */
+#Collect .inner .bottom {display: flex; gap: 100px;}
+#Collect .inner .bottom img {width: 700px; height: 500px; }
+#Collect .inner .bottom img {order: 2;}
+#Collect .inner .bottom dl {order: 1;margin: 100px 0 0 490px; text-align: right;}
+#Collect .inner  .bottom dl dt::before {content: ""; display: block; position: absolute; width: 1px; height: 100px; background: var(--subcolor); right: 0; top: 80px;}
+
+
+
+/* ani_bar */
+#main .bar {background: var(--main); height: 35px; width: 2800px;  display: flex;}
+#main .bar img {width: 100%; display: block; animation: slogan 20s linear infinite; transform:  translateX(0); height: 30px;}
+
+
+
+/* best */
+#best {padding: 150px 2%; text-align: center; position: relative;}
+#best .inner {position: relative;}
+#best p {margin-bottom: 100px;} 
+#best p::before {content: ""; display: block; position: absolute; width: 1px; height: 100px; background: var(--subcolor); left: 50%; top: 150px;}
+
+#best img {width: 100%;}
+#best .best_list {padding-bottom: 30px;}
+#best .best_list .sub_img {opacity: 0; position: absolute; left: 0; top: 0; transition: all 0.5s; }
+#best .best_list li:hover .sub_img {opacity: 1; width: 100%; height: 430px;} 
+
+#best .prd dl {padding-top: 30px;}
+#best .prd dl dt {font-weight: 500;}
+#best .prd dl dd {font-size: 1.5rem; font-weight: 300;}
+
+#best .swiper-scrollbar-drag {background: var(--subcolor);}
+#best .swiper .swiper-scrollbar {
+    position: absolute; left: 0;
+    background: #eee;
+  }
+
+
+
+/* tik 틱톡 */
+#tik {background: var(--main) url('../images/Swarovski_big.png')no-repeat 0 300px;  width: 100%; height: 600px; position: relative; margin: 0 0 400px;}
+#tik .inner {display: flex;}
+
+#tik .tik_txt p:nth-child(1) {color: #fff; font-size: 3rem; font-weight: 400; position: absolute; left: 360px; top: 160px; writing-mode: vertical-rl;}
+#tik .tik_txt p:nth-child(1) span {font-weight: 700;}
+#tik .tik_txt p:nth-child(2) {font-size: 3rem; font-weight: 400; position: absolute; color: #fff; right: 640px; top: 350px;}
+#tik .tik_txt p:nth-child(2) span {font-weight: 700;}
+#tik .tik_txt p:nth-child(3) {font-size: 4rem; font-weight: 400;position: absolute; left: 530px; bottom: -330px; color: #000;} 
+#tik .tik_txt p:nth-child(4) {position: absolute; font-size: 3.5rem; font-weight: 700; left: 550px; bottom: -370px; color:#000;}
+
+
+
+/* left 틱톡 영상*/
+#tik .left {position: relative; left: 300px; top: 160px;}
+#tik .left .tictok img {width: 350px; height: 700px;}
+#tik .left .tictok .btn_play {background:url('../images/play_btn.png')no-repeat center; width: 60px; height: 65px; position: absolute; left: 45%; top: 45%; font-size: 0;border: 0; }
+
+
+
+/* 틱톡 영상 모달팝업 */
+/* #tik .tiktok_play */
+.tiktok_play {position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgb(255, 255, 255); z-index: 15;}
+.tiktok_play video {width: 100%; height: 100%; object-fit: contain; }
+.tiktok_play .movie_close {font-size: 0; background: url('../images/btn_close.png')no-repeat center; position: absolute; right: 39%; top: 0; width: 60px; height: 60px; border: 0; cursor: pointer;}
+
+
+/* right 인스타 큐브 슬라이드*/
+#tik .right {display: block; width: 528px; position: absolute;  right: 400px; top: 400px;}
+
+
+/* 틱톡영역 움직이는 원 */
+#main .cc_w img{animation: rotate_img 10s linear infinite;}
+#main .cc_w {position: absolute; left: -170px; top: 4100px; z-index: 2;}
+
+#movie {position: relative; padding: 150px 0;}
+#movie p::before {content: ""; display: block; position: absolute; width: 1px; height: 100px; background: var(--subcolor); left: 50%; top: 290px; z-index: 10;}
+
+#movie .youtube_movie {text-align: center; padding-top: 100px;}
+
+
+
+/* service */
+#service {padding: 50px 0; background: #FFEDDF;}
+
+#service .inner h4 {font-family: var(--subfont); font-size: 3rem; text-align: center; padding-bottom: 40px; font-weight: 500;}
+#service .service_list {display: flex; gap: 100px; text-align: center; justify-content: center;}
+#service .service_list dl dd:nth-child(2) {font-weight: 700; padding: 10px 0 5px;}
+
+
+
+/* footer */
+#footer {background: var(--main); padding: 80px 0 60px;}
+#footer .footer_logo {text-align: center; padding-bottom: 30px;}
+#footer .link {display: flex; gap: 20px; justify-content: center; font-size: 1.5rem; }
+#footer .link li a {display: block; color: #fff;}
+#footer address {color: #fff; text-align: center; font-weight: 200; padding: 20px 0 5px; font-size: 1.4rem;opacity: 0.5;}
+#footer .copy {color: #fff; text-align: center; font-weight: 200;font-size: 1.4rem; opacity: 0.5;}
+#footer .sns {display: flex; gap: 10px; justify-content: center; padding-top: 30px;}
+
+
+/* gotop */
+.gotop a { cursor: pointer;  display: block; position: fixed; right: 20px; bottom:20px;
+  background: url('../images/gotop.png')no-repeat center; padding: 20px; font-size: 0;
+ }

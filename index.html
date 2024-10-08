@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스와로브스키</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="#"><img src="images/logo_txt.svg" alt="Swarovski"></a></h1>
+
+                <div class="swan"><img src="images/logo_swan.svg" alt="Swarovski">
+                </div>
+
+                <nav>
+                    <div class="gnb_bar"></div>
+                    <ul class="gnb">
+                        <li><a href="#">Jewelry</a>
+                            <ul class="dp2">
+                                <li><a href="#">신상품</a></li>
+                                <li><a href="#">네크리스</a></li>
+                                <li><a href="#">링</a></li>
+                                <li><a href="#">이어링</a></li>
+                                <li><a href="#">컬렉션별 쇼핑</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Accessories</a>
+                            <ul class="dp2">
+                                <li><a href="#">디지털 액세서리</a></li>
+                                <li><a href="#">선글라스</a></li>
+                                <li><a href="#">헤어 액세서리</a></li>
+                                <li><a href="#">스마트폰 케이스</a></li>
+                                <li><a href="#">바디 주얼리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Watch</a>
+                            <ul class="dp2">
+                                <li><a href="#">여성용</a></li>
+                                <li><a href="#">남성용</a></li>
+                                <li><a href="#">워치 스트랩</a></li>
+                                <li><a href="#">전체보기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Decoration</a>
+                            <ul class="dp2">
+                                <li><a href="#">홈 데코레이션</a></li>
+                                <li><a href="#">가죽&액세서리</a></li>
+                                <li><a href="#">스와로브스키 셀렉션</a></li>
+                                <li><a href="#">리미티드 에디션</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gift</a>
+                            <ul class="dp2">
+                                <li><a href="#">베스트셀러</a></li>
+                                <li><a href="#">로맨틱 기프트</a></li>
+                                <li><a href="#">웨딩 기프트</a></li>
+                                <li><a href="#">생일 기프트</a></li>
+                                <li><a href="#">졸업 기프트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Outlet</a>
+                            <ul class="dp2">
+                                <li><a href="#">세트제품</a></li>
+                                <li><a href="#">브레이슬릿</a></li>
+                                <li><a href="#">추천 제품</a></li>
+                                <li><a href="#">하이라이트</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <ul class="util">
+                    <li><a href="#" class="earth"><img src="images/ico_lan.svg" alt="언어선택"></a></li>
+                    <li class="btn_search"><a href="#"><img src="images/ico_search.svg" alt="검색버튼"></a></li>
+                    <li><a href="#"><a href="#"><img src="images/ico_cart.svg" alt="장바구니"></a></li>
+                    <li><a href="#"><a href="#"><img src="images/ico_login.svg" alt="로그인"></a></li>
+                </ul>
+            </div><!-- inner -->
+
+            <div class="dp2_bg"></div>
+
+            <ul class="lan">
+                <li><a href="#" class="on">KR</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+
+
+            <div class="search">
+                <form>
+                    <fieldset>
+                        <legend>검색영역</legend>
+
+                        <div>
+                            <input type="search" placeholder="Search for...">
+                            <input type="submit" value="검색">
+                        </div>
+
+                        <ul class="search_bottom">
+                            <li><span>인기검색어</span></li>
+                            <li><a href="#">스완</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">진주</a></li>
+                        </ul>
+                    </fieldset>
+                </form>
+
+                <button class="search_close">검색닫기</button>
+            </div><!-- search -->
+        </header>
+
+        <main id="main">
+            <section id="main_visual">
+                <div class="swiper mv">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide mv1">
+                            <div class="visual_txt1">
+                                <h3>2024 S/S</h3>
+                                <p>Swarovski의 새로운 컬렉션은 <br>
+                                    에너지와 우아함, 빛으로 가득합니다.</p>
+                                <div class="btn_more1"><a href="#">More View</a></div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide mv2">
+                            <div class="visual_txt2">
+                                <h3>Infinitely Inspiring</h3>
+                                <p>시그니처 광채와 함께 빛나는 어버이날을 축하하세요.</p>
+                                <div class="btn_more2"><a href="#">More View</a></div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide mv3">
+                            <div class="visual_txt3">
+                                <h3>Disney100 Gift</h3>
+                                <p>Swarovski Disney100에서 영감을 받은 컬렉션과 <br>
+                                    함께
+                                    마법처럼 빛나보세요.</p>
+                                <div class="btn_more3"><a href="#">More View</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div><!-- swiper mv -->
+
+
+                <div class="titlebox">
+                    <div class="motion1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                        <img src="images/Masters.png" alt="Masters of Light Since 1895">
+                    </div>
+                    <div class="motion2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                        <img src="images/Swarovski.png" alt="Swarovski">
+                    </div>
+                </div><!-- titbox -->
+
+                <div class="description">
+                    <p>1895년 이래 창립자 다니엘 스와로브스키의 혁신과 디자인을 향한 열정,<br>
+                        크리스탈 커팅에 대한 전문성은 Swarovski를 선도적 브랜드로 정의할 수 있도록 이끌었습니다.</p>
+                    <a href="#" class="btn_read">Read More</a>
+                </div><!-- desc -->
+
+            </section><!-- main_visual -->
+
+
+            <div class="cc">
+                <img src="images/cc_n.png" alt="">
+            </div><!-- cc -->
+
+            <section id="Collect" data-aos="fade-up">
+                <div class="inner">
+                    <h2>The Wonder of Love</h2>
+                    <p>세상의 모든 사랑을 표현하는 액세서리를 만나보세요.</p>
+
+                    <div class="top" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <img src="images/Collection_01.png" alt="">
+                        <dl>
+                            <dt>World of Swarovski</dt>
+                            <dd>사랑을 표현하기 좋은 계절. <br>
+                                김유정과 함께한 2024 스와로브스키 로맨틱 컬렉션</dd>
+                            <dd><a href="#">More View</a></dd>
+                        </dl>
+                    </div><!-- top -->
+
+                    <div class="bottom" data-aos="fade-left">
+                        <img src="images/Collection_02.png" alt="">
+                        <dl>
+                            <dt>Millenia Collection</dt>
+                            <dd>크리스탈에게 보내는 러브레터</dd>
+                            <dd><a href="#">More View</a></dd>
+                        </dl>
+                    </div><!-- bottom -->
+                </div><!-- inner -->
+            </section>
+
+            <div class="bar">
+                <img src="images/bar_txt.png" alt="">
+                <img src="images/bar_txt.png" alt="">
+                <img src="images/bar_txt.png" alt="">
+            </div><!-- bar -->
+
+            <section id="best" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear"
+                data-aos-duration="1200">
+                <div class=" inner">
+                    <h2>Best Seller</h2>
+                    <p>당신의 일상을 반짝임으로 깨우는 스와로브스키의 베스트 제품들을 만나보세요.</p>
+                </div><!-- inner -->
+
+                <div class="swiper best_list">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best1.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <a href="#" class="sub_img"><img src="images/h_best1.png" alt="제품착용사진"></a>
+                            <dl>
+                                <dt>Dancing Swan 로듐 플래팅</dt>
+                                <dd>₩ 245,000</dd>
+                            </dl>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best2.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Dazzling Swan 로즈골드 톤 플래팅</dt>
+                                <dd>₩ 175,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best2.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best3.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Disney Mickey Mouse 화이트</dt>
+                                <dd>₩ 195,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best3.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best4.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Dextera Bangle 워치</dt>
+                                <dd>₩ 600,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best4.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best5.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Hyperbola 펜던트파베</dt>
+                                <dd>₩ 155,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best5.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best6.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Teddy 펜던트곰</dt>
+                                <dd>₩ 205,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best6.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best7.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Mesmera 드롭 이어링믹스</dt>
+                                <dd>₩ 225,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best7.png" alt="제품착용사진"></a>
+                        </li>
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best8.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Hyperbola 펜던트파베</dt>
+                                <dd>₩ 155,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best8.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best9.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Dancing Swan 블루</dt>
+                                <dd>₩ 245,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best9.png" alt="제품착용사진"></a>
+                        </li>
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best10.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Insigne 펜던트라운드 컷</dt>
+                                <dd>₩ 205,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best10.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best11.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Swarovski Sparkling Dance</dt>
+                                <dd>₩ 195,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best11.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best12.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Illumina 샴페인 골드 톤 피니시
+                                </dt>
+                                <dd>₩ 580,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best12.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best13.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Gema 브로치</dt>
+                                <dd>₩ 295,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best13.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best14.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Dazzling Swan Y 로즈골드</dt>
+                                <dd>₩ 195,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best14.png" alt="제품착용사진"></a>
+                        </li>
+
+                        <li class="swiper-slide prd">
+                            <div class="bt_img">
+                                <img src="images/best15.png" alt="제품사진">
+                            </div><!-- bt_img -->
+                            <dl>
+                                <dt>Birthstone 스터드 이어링</dt>
+                                <dd>₩ 155,000</dd>
+                            </dl>
+                            <a href="#" class="sub_img"><img src="images/h_best15.png" alt="제품착용사진"></a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-scrollbar"></div>
+                    <!-- 스크롤바 맞추기 -->
+
+                </div><!-- best_list -->
+            </section><!-- best -->
+
+            <div class="cc_w">
+                <img src="images/cc_w.png" alt="">
+            </div><!-- cc_w -->
+
+            <section id="tik" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear"
+                data-aos-duration="1200">
+                <div class=" inner">
+
+                    <div class="tik_txt">
+                        <p>Swarovski <span>Tiktok</span></p>
+                        <p>Swarovski <span>Instagram</span></p>
+                        <p>FOLLOW US</p>
+                        <p>@swarovski</p>
+                    </div><!-- txt -->
+
+                    <div class="left">
+                        <div class="tictok">
+                            <div class="movie_img">
+                                <img src="images/tik.png" alt="틱톡영상이미지">
+
+                                <button class="btn_play">영상보기</button>
+                            </div><!-- movie_img -->
+                        </div>
+                    </div><!-- left -->
+
+                    <div class="right">
+                        <div class="swiper insta_list">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide insta">
+                                    <a href="https://www.instagram.com/swarovski/ " target="_blank"><img
+                                            src="images/insta1.png" alt="인스타 사진1"></a>
+                                </li>
+                                <li class="swiper-slide insta">
+                                    <a href="https://www.instagram.com/swarovski/ " target="_blank"><img
+                                            src="images/insta2.png" alt="인스타 사진2"></a>
+                                </li>
+                                <li class="swiper-slide insta">
+                                    <a href="https://www.instagram.com/swarovski/ " target="_blank"> <img
+                                            src="images/insta3.png" alt="인스타 사진3"></a>
+                                </li>
+                                <li class="swiper-slide insta">
+                                    <a href="https://www.instagram.com/swarovski/ " target="_blank"><img
+                                            src="images/insta4.png" alt="인스타 사진4"></a>
+                                </li>
+                                <li class="swiper-slide insta">
+                                    <a href="https://www.instagram.com/swarovski/ " target="_blank"><img
+                                            src="images/insta5.png" alt="인스타 사진5"></a>
+                                </li>
+                            </ul>
+                        </div><!-- insta_list -->
+                    </div><!-- right -->
+
+                </div><!-- inner -->
+
+                <div class="tiktok_play">
+                    <!-- <video src="images/swarovski.mp4" controls autoplay muted loop playsinline></video> -->
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@swarovski/video/7358572849155558689"
+                        data-video-id="7358572849155558689" style="max-width: 605px;min-width: 325px;">
+                        <section> <a target="_blank" title="@swarovski"
+                                href="https://www.tiktok.com/@swarovski?refer=embed">@swarovski</a> Swarovski Duomo —
+                            bursting with joyful extravagance. Explore our new flagship store at Piazza del Duomo 31,
+                            Milan. <a title="swarovski" target="_blank"
+                                href="https://www.tiktok.com/tag/swarovski?refer=embed">#Swarovski</a> <a
+                                title="swarovskiduomo" target="_blank"
+                                href="https://www.tiktok.com/tag/swarovskiduomo?refer=embed">#SwarovskiDuomo</a> <a
+                                target="_blank" title="♬ original sound - Swarovski"
+                                href="https://www.tiktok.com/music/original-sound-7358572883067800353?refer=embed">♬
+                                original sound - Swarovski</a> </section>
+                    </blockquote>
+                    <script async src="https://www.tiktok.com/embed.js"></script>
+
+                    <button class="movie_close">영상닫기</button>
+                </div><!-- tiktok_play -->
+
+            </section>
+
+            <section id="movie" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear"
+                data-aos-duration="1200">
+                <div class=" inner">
+                    <h2>Swarovski Mode</h2>
+                    <p>가장 역동적인 반짝임의 순간을 담아, Ready to Swarovski.</p>
+                    <div class="youtube_movie">
+                        <iframe width="1123" height="632"
+                            src="https://www.youtube.com/embed/pZVXuPSGcmo?autoplay=1&mute=1&controls=0&playsinline=1&playlist=pZVXuPSGcmo&loop=1&=0si=i21yePkeftkF2JUz?"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <!-- 동영상 아아디값 삽입 loop걸기 -->
+                    </div><!-- youtube_movie -->
+                </div><!-- inner -->
+            </section>
+
+            <section id="service">
+                <div class="inner">
+                    <h4>Swarovski Services</h4>
+
+                    <ul class="service_list">
+                        <dl>
+                            <dt><a href="#"><img src="images/ico_chat.png" alt="채팅하기"></a></dt>
+                            <dd>LIVE CHAT</dd>
+                            <dd>도움이 필요하시면 <br>
+                                채팅으로 문의 부탁드립니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#"><img src="images/ico_click.png" alt="고객 서비스"></a></dt>
+                            <dd>CUSTOMER SERVICE</dd>
+                            <dd>스와로브스키 고객케어 전문가들이 <br>
+                                도움을 드리겠습니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"><img src="images/ico_online.png" alt="예약하기"></a>
+                            </dt>
+                            <dd>CLICK & RESERVE</dd>
+                            <dd>온라인으로 예약하고 선택한 매장에서 <br>
+                                무료로 제품을 수령하세요.</dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#"><img src="images/ico_gift.png" alt="선물 서비스"></a></dt>
+                            <dd>GIFT SERVICE</dd>
+                            <dd>고급 포장은 물론, 마음을 담은 <br>
+                                카드까지 함께 선물하세요.
+                            </dd>
+                        </dl>
+                    </ul>
+                </div><!-- inner -->
+            </section>
+        </main>
+
+        <footer id="footer">
+
+            <div class="footer_logo">
+                <img src="images/footer_logo.svg" alt="Swarovski">
+            </div><!-- footer_logo -->
+
+            <ul class="link">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">멤버쉽</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+
+            <address>㈜스와로브스키코리아 &nbsp;
+                서울시 강남구 도산대로 456 &nbsp;
+                백영빌딩 10,11,12층 (우)06062 &nbsp;
+                대표이사 오나미 &nbsp;
+                사업자등록번호 : 211-86-96129</address>
+
+            <div class="copy">
+                Copyright ⓒ 2024 Swarovski 대한민국. All rights reserved. &nbsp;
+                SWAROVSKI 및 SWAN 로고는 Swarovski AG의 등록상표입니다.
+            </div><!-- copy -->
+
+            <ul class="sns">
+                <li><a href="https://www.instagram.com/swarovski/ " target="_blank"><img src="images/ico_insta.png"
+                            alt="insta"></a></li>
+                <li><a href="https://www.facebook.com/SWAROVSKI.global/" target="_blank"><img
+                            src="images/ico_facebook.png" alt="facebook"></a></li>
+                <li><a href="https://www.youtube.com/Swarovski" target="_blank"><img src="images/ico_youtube.png"
+                            alt="youtube"></a>
+                </li>
+            </ul>
+        </footer>
+
+        <div class="gotop">
+            <a href="#">맨 위로가기</a>
+        </div><!-- gotop -->
+
+    </div><!-- wrap -->
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
