@@ -7,6 +7,10 @@
     --subcolor: #C8C9E0;
 }
 
+html::-webkit-scrollbar {width: 8px;}
+html::-webkit-scrollbar-track {background: var(--subcolor);}
+html::-webkit-scrollbar-thumb {background: var(--main);}
+
 body {line-height: 1.5;color: #000;font-size: 1.6rem;
 font-family: var(--mainFont); overflow-x: auto;}
 
